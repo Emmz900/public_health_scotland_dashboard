@@ -1,0 +1,13 @@
+name: public_health_scotland_dashboard
+title: public_health_scotland_dashboard
+username: emma-menzies
+account: emma-menzies
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9561774
+bundleId:
+url: https://emma-menzies.shinyapps.io/public_health_scotland_dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: screenshots/Screenshot 2023-07-21 at 10.59.58.png|screenshots/Screenshot 2023-07-21 at 11.00.11.png|screenshots/Screenshot 2023-07-21 at 11.00.46.png|raw_data|scripts
