@@ -28,13 +28,8 @@
           legend.title = element_blank()
     )+
     labs(
-<<<<<<< Updated upstream
-      title = "\nAverage length of stay by Health Board, Admission Type and SIMD\n",
-      subtitle = "SIMD = Scottish Index of Multiple Depravation",
-=======
       title = "Average length of stay by Health Board, Admission Type and SIMD",
       subtitle = "SIMD = Scottish Index of Multiple Depravity",
->>>>>>> Stashed changes
       x = "\nQuarter\n",
       y = "\nAverage length of stay (days)\n"
     )
