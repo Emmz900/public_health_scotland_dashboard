@@ -1,12 +1,12 @@
-name: public_health_scotland_dashboard
-title: public_health_scotland_dashboard
+name: shiny_app
+title: shiny_app
 username: emma-menzies
 account: emma-menzies
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 9561774
+appId: 9629934
 bundleId:
-url: https://emma-menzies.shinyapps.io/public_health_scotland_dashboard/
+url: https://emma-menzies.shinyapps.io/shiny_app/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE

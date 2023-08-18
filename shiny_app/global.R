@@ -9,8 +9,8 @@ library(ggh4x)
 health_boards <- (read_csv("clean_data/health_boards.csv"))
 health_board_list <- sort(unique(health_boards$hb_name))
 
-health_boards <- (read_csv("clean_data/health_boards.csv"))
-health_board_list <- sort(unique(health_boards$hb_name))
+# health_boards <- (read_csv("clean_data/health_boards.csv"))
+# health_board_list <- sort(unique(health_boards$hb_name))
 
 # Percent plot -------------
 beds <- read_csv("clean_data/clean_bed_data")
@@ -32,7 +32,7 @@ sex_list <- unique(length_of_stay_data$sex)
 source("R/length_of_stay.R")
 
 
-# Age and sex data
+# Age and sex data ---------------------
 age_and_sex <- read_csv("clean_data/age_and_sex.csv")
 admission_type <- age_and_sex %>% distinct(AdmissionType)
 #hb_names <- age_and_sex %>% distinct(HBName)
@@ -41,8 +41,7 @@ age <- age_and_sex %>% distinct(Age)
 source("R/age_and_sex.R")
 
 
-# simd data
-
+# simd data ----------------------
 simd <- read_csv("clean_data/simd_clean.csv")
 simd_level <- sort(unique(simd$SIMD))
 source("R/simd.R")
