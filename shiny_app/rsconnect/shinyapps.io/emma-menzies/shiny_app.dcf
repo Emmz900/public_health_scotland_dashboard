@@ -10,4 +10,4 @@ url: https://emma-menzies.shinyapps.io/shiny_app/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: screenshots/Screenshot 2023-07-21 at 10.59.58.png|screenshots/Screenshot 2023-07-21 at 11.00.11.png|screenshots/Screenshot 2023-07-21 at 11.00.46.png|raw_data|scripts
+ignoredFiles: screenshots/Screenshot 2023-07-21 at 10.59.58.png|screenshots/Screenshot 2023-07-21 at 11.00.11.png|screenshots/Screenshot 2023-07-21 at 11.00.46.png|scripts
