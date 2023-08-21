@@ -19,7 +19,7 @@ These questions were explored from three different angles: temporal, geographic,
 
 # Structure and Dashboard
 
-The final version of the dashboard is within the `shiny_app` folder of the repo, or can be viewed at [](https://emma-menzies.shinyapps.io/shiny_app/).
+The final version of the dashboard is within the `shiny_app` folder of the repo, or can be viewed at ![](https://emma-menzies.shinyapps.io/shiny_app/).
 
 - `R` contains scripts to make the plots
 - `scripts` contains some cleaning scripts
