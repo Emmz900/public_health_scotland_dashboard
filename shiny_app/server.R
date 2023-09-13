@@ -1,34 +1,34 @@
 server <- function(input, output, session){
-
-
-   alpha_on <- reactive({
-
-     if(input$winter_shading %% 2 != 0){
+  
+  # Winter buttons -----------------
+  alpha_on <- reactive({
+    
+    if(input$winter_shading %% 2 != 0){
       0.3
     } else {
       0
     }
-   })
-   
-   alpha_on2 <- reactive({
-     
-     if(input$winter_shading2 %% 2 != 0){
-       0.3
-     } else {
-       0
-     }
-   })
-   
-   alpha_on3 <- reactive({
-     
-     if(input$winter_shading3 %% 2 != 0){
-       0.3
-     } else {
-       0
-     }
-   })
+  })
   
-
+  alpha_on2 <- reactive({
+    
+    if(input$winter_shading2 %% 2 != 0){
+      0.3
+    } else {
+      0
+    }
+  })
+  
+  alpha_on3 <- reactive({
+    
+    if(input$winter_shading3 %% 2 != 0){
+      0.3
+    } else {
+      0
+    }
+  })
+  
+  # Percentage Occupancy Plot ------------------
   output$pre_plot <- renderPlot({
     percentage_occupancy(data = beds(),
                          input_hb = input$hb,
@@ -42,32 +42,32 @@ server <- function(input, output, session){
                                     input$admission_type_input,
                                     input$health_board_input,
                                     alpha_on())
-
+    
   })
   
   # Create plot of average length of stay --------------
   output$length_of_stay_plot <- renderPlot({
-  create_length_of_stay_plot(length_of_stay_data,
-                             input$length_health_board_input,
-                             input$length_admission_type_input,
-                             input$length_age_input,
-                             input$sex_input,
-                             alpha_on2())
+    create_length_of_stay_plot(length_of_stay_data,
+                               input$length_health_board_input,
+                               input$length_admission_type_input,
+                               input$length_age_input,
+                               input$sex_input,
+                               alpha_on2())
   })
-
-
-  # create plot for age and sex
+  
+  
+  # create plot for age and sex -----------
   
   output$age_and_sex_plot <- renderPlot({
     create_age_and_sex_plot(age_and_sex, 
                             input$age_input,
                             alpha_on())
-                            # input$health_board_input,
-                            # input$gender_input)
+    # input$health_board_input,
+    # input$gender_input)
     
-      
+    
   })
-  # create SIMD output
+  # create SIMD output -----------------
   
   output$simd_plot<- renderPlot({
     create_simd_plot(simd, 
@@ -75,8 +75,8 @@ server <- function(input, output, session){
                      input$simd_level_input_s,
                      alpha_on2())
   })
-
-#graph -----------------------------
+  
+  # beds plot  -----------------------------
   
   filtered_data <- eventReactive(input$submit, {
     joined_data %>%
@@ -101,14 +101,13 @@ server <- function(input, output, session){
   observeEvent(input$year, {
     choices <- if (input$year == 2017) {
       4 
-      } else {
+    } else {
       1:4
     }
-      updateSelectInput(session, "quarter",
-                        choices = choices)
-      
-    })
-  }
-  
-  
-  
+    updateSelectInput(session, "quarter",
+                      choices = choices)
+    
+  })
+}
+
+
