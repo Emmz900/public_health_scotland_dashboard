@@ -39,4 +39,4 @@ These tabs contain interactive data visualisations where demographics, health bo
 - Tab 2 (Length Of Stay) -> Average Length of Stay for Inpatients by Demographic plot, data cleaning
 - All tabs -> Covid Pandemic start line, assisstance with "Winter" button
 - Presentation -> slides 10-14 exploring the effect of winter and covid on the number of admissions and length of stays for patients
-- general -> creation of a trello board for groupwork management, contributions to design, content, data exploration, and documentation
+- General -> creation of a trello board for groupwork management, contributions to design, content, data exploration, and documentation
